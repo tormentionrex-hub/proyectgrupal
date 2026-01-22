@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renderizado condicional</title>
+
+  <!-- Estilos mínimos en el HTML (para no crear un CSS extra) -->
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { padding: 10px 14px; cursor: pointer; }
+    .card { margin-top: 14px; padding: 18px; border-radius: 10px; color: #fff; }
+    .verde { background: #16a34a; }
+    .roja  { background: #dc2626; }
+  </style>
+</head>
+
+<body>
+  <h1>Renderizado condicional</h1>
+  <p>Haz clic y verás solo una tarjeta a la vez.</p>
+
+  <!-- Botón que cambia el estado -->
+  <button id="toggleBtn">Cambiar tarjeta</button>
+
+  <!-- Tarjeta verde -->
+  <div id="cardVerde" class="card verde">
+    Tarjeta VERDE (cuando showGreen = true)
+  </div>
+
+  <!-- Tarjeta roja -->
+  <div id="cardRoja" class="card roja">
+    Tarjeta ROJA (cuando showGreen = false)
+  </div>
+
+  <!-- Cargamos el JS externo -->
+  <script src="index.js"></script>
+</body>
+</html>
