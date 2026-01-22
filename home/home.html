@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../home/home.css">
+</head>
+<body>
+
+
+<!-- ================= HEADER / NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <!-- Nombre del proyecto -->
+    <a class="navbar-brand" href="#">Educación CR</a>
+
+    <!-- Botón hamburguesa para móvil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Opciones del menú -->
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#teoria">Sobre el proyecto</a></li>
+        <li class="nav-item"><a class="nav-link" href="comentarios.html" target="_blank">Comentarios</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+  <!-- ===== SECCIÓN INTRODUCCIÓN ===== -->
+  <section id="intro" class="container my-5">
+    <div class="row align-items-center">
+
+      <!-- Texto -->
+      <div class="col-md-6">
+        <h2>¿De qué trata esta página?</h2>
+        <p>
+          Esta aplicación web fue creada con el objetivo de analizar las principales
+          problemáticas del sistema educativo costarricense, enfocándose en la
+          infraestructura, la gestión institucional y la administración educativa.
+        </p>
+        <p>
+          El proyecto busca informar, reflexionar y permitir la participación
+          mediante comentarios y opiniones de estudiantes y docentes.
+        </p>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-md-6 text-center">
+        <!-- El nombre de la imagen es solo de referencia -->
+        <img src="../assets/MalaEducacion1.jpg" class="img-fluid intro-img" alt="Educación en Costa Rica">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN TEORÍA CON FLECHAS ===== -->
+  <section id="teoria" class="container my-5">
+
+    <h2 class="text-center mb-4">Sobre el Proyecto</h2>
+
+    <!-- Carrusel de Bootstrap -->
+    <div id="carouselTeoria" class="carousel slide">
+
+      <div class="carousel-inner">
+
+        <!-- TEXTO 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Objetivo del Proyecto</h3>
+              <p>
+                El objetivo principal es desarrollar una aplicación web simple
+                que permita visualizar problemáticas del sistema educativo
+                costarricense usando HTML, CSS y JavaScript básico.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="../assets/EstudianteCr.png" class="img-fluid teoria-img" alt="Objetivo educativo">  <!-- imagen -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXTO 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Motivación</h3>
+              <p>
+                Este proyecto surge como una iniciativa académica para aplicar
+                conocimientos de programación web mientras se analiza una
+                problemática social real.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="aula-estudiantes.jpg" class="img-fluid teoria-img" alt="Aula"> <!-- imagen -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXTO 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Problemáticas Analizadas</h3>
+              <p>
+                Se abordan temas como planes de estudio desactualizados, mala
+                infraestructura, falta de zonas recreativas y mala administración.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="infraestructura-colegio.jpg" class="img-fluid teoria-img" alt="Infraestructura"> <!-- imagen -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXTO 4 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Impacto Esperado</h3>
+              <p>
+                Se espera generar conciencia sobre la situación educativa actual
+                y fomentar la participación mediante opiniones y comentarios.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="educacion-futuro.jpg" class="img-fluid teoria-img" alt="Futuro educación"> <!-- imagen -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Flechas -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTeoria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTeoria" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= SECCIÓN: ¿QUÉ ENCONTRARÁS? ================= -->
+<section id="que-encontraras" class="container my-5">
+
+  <h2 class="text-center mb-4">¿Qué encontrarás en esta página?</h2>
+
+  <div class="row text-center">
+
+    <!-- Item 1 -->
+    <div class="col-md-3 info-box">
+      <i class="bi bi-building"></i>
+      <h5>Problemáticas Educativas</h5>
+      <p>Análisis de las principales fallas del sistema educativo costarricense.</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col-md-3 info-box">
+      <i class="bi bi-chat-dots"></i>
+      <h5>Opiniones</h5>
+      <p>Comentarios y experiencias de estudiantes y ciudadanos.</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="col-md-3 info-box">
+      <i class="bi bi-clipboard-data"></i>
+      <h5>Análisis Institucional</h5>
+      <p>Evaluación del rol del MEP y la gestión educativa.</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="col-md-3 info-box">
+      <i class="bi bi-lightbulb"></i>
+      <h5>Reflexión Social</h5>
+      <p>Conciencia sobre la importancia de mejorar la educación.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECCIÓN: LLAMADO A LA ACCIÓN ================= -->
+<section id="cta" class="my-5 text-center">
+  <div class="cta-content">
+    <h2>Tu opinión también importa</h2>
+    <p>
+      Comparte tu experiencia y ayúdanos a visibilizar la realidad
+      del sistema educativo costarricense.
+    </p>
+    <button id="btnComentarios" class="btn btn-dark btn-lg">
+      Ir a Comentarios
+    </button>
+  </div>
+</section>
+
+<!-- ================= SECCIÓN: MENSAJE FINAL ================= -->
+<section id="mensaje-final" class="container my-5 text-center">
+  <blockquote>
+    “La educación es la base del desarrollo de una sociedad justa y consciente.”
+  </blockquote>
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../home/home.js"></script>
+</body>
+</html>

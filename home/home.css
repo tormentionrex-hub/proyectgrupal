@@ -1,0 +1,139 @@
+/* ================= GENERAL ================= */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= INTRO ================= */
+#intro {
+    background-color: #f5faff;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#intro h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+#intro p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Imagen de introducción */
+.intro-img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+/* ================= TEORÍA ================= */
+#teoria {
+    background-color: #e3f2fd;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#teoria h2 {
+    color: #1565c0;
+}
+
+.teoria-img {
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* Contenedor del carrusel */
+#carouselTeoria {
+    position: relative;
+}
+
+/* Flecha izquierda */
+.carousel-control-prev {
+    left: -90px;          /* Más hacia el borde izquierdo */
+    width: 5%;
+}
+
+/* Flecha derecha */
+.carousel-control-next {
+    right: -90px;         /* Más hacia el borde derecho */
+    width: 5%;
+}
+
+/* Íconos de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);    /* Flechas negras */
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+
+/* Cambiar color de las flechas a negro */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Convierte el icono blanco en negro */
+    width: 3rem;
+    height: 3rem;
+}
+
+/* (Opcional) agregar fondo circular para más contraste */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+
+/* ================= ¿QUÉ ENCONTRARÁS? ================= */
+
+#que-encontraras {
+    background-color: #f1f8ff;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.info-box {
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info-box i {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.info-box:hover {
+    background-color: #e3f2fd;
+    transform: translateY(-5px);
+}
+
+/* ================= LLAMADO A LA ACCIÓN ================= */
+
+#cta {
+    background-color: #0d47a1;
+    color: white;
+    padding: 60px 20px;
+}
+
+#cta p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* ================= MENSAJE FINAL ================= */
+
+#mensaje-final blockquote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #333;
+}
+
