@@ -7,7 +7,7 @@ comentarios = [
     {
         id: 2,
         nombre: "Franco",
-        texto: "ME cago en el cahcara"
+        texto: "Buen colegio"
     },
     {
         id: 3,
