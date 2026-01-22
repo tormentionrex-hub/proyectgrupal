@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle de institución</title>
+
+  <!-- CSS de esta página -->
+  <link rel="stylesheet" href="detalle.css" />
+</head>
+<body>
+  <!-- Barra superior con link de regreso -->
+  <header class="topbar">
+    <div class="container topbar__content">
+      <a class="back-link" href="index.html">← Volver al listado</a>
+      <span class="badge">Demo</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero con imagen grande -->
+    <section class="hero" aria-label="Información principal de la institución">
+      <img
+        class="hero__img"
+        src="https://via.placeholder.com/1400x700?text=Instituto+Central+(Detalle)"
+        alt="Foto grande de la institución"
+      />
+
+      <div class="hero__body">
+        <h1 class="hero__title">Instituto Central</h1>
+
+        <!-- Valoración visual con estrellas -->
+        <div class="rating">
+          <div class="stars" aria-label="Valoración promedio: 4 de 5">
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star">★</span>
+          </div>
+          <span class="rating__text">4.0 (128 reseñas)</span>
+        </div>
+
+        <p class="hero__desc">
+          Institución con enfoque práctico, proyectos guiados y acompañamiento académico.
+          Este es un ejemplo de página detalle para principiantes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Comentarios existentes (de ejemplo) -->
+    <section class="panel" aria-label="Comentarios de la institución">
+      <h2 class="panel__title">Comentarios</h2>
+
+      <!-- Comentario 1 -->
+      <article class="comment">
+        <div class="comment__head">
+          <strong class="comment__name">María G.</strong>
+          <div class="stars stars--sm" aria-label="María calificó 5 de 5">
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+          </div>
+        </div>
+        <p class="comment__text">
+          Muy buenos profesores y buena organización. Me gustó la atención.
+        </p>
+      </article>
+
+      <!-- Comentario 2 -->
+      <article class="comment">
+        <div class="comment__head">
+          <strong class="comment__name">Carlos R.</strong>
+          <div class="stars stars--sm" aria-label="Carlos calificó 3 de 5">
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star is-filled">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+        <p class="comment__text">
+          La infraestructura está bien, pero podrían mejorar los tiempos de respuesta.
+        </p>
+      </article>
+    </section>
+
+    <!-- Formulario para agregar comentario -->
+    <section class="panel" aria-label="Agregar una valoración y comentario">
+      <h2 class="panel__title">Deja tu comentario</h2>
+
+      <!--
+        IMPORTANTE:
+        - Sin JavaScript o backend, este formulario NO guardará nada.
+        - Sirve como ejemplo de estructura (inputs, estrellas, etc.).
+      -->
+      <form class="form" action="#" method="post">
+        <div class="form__row">
+          <label class="label" for="name">Tu nombre</label>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ej: Ana Pérez"
+            required
+          />
+        </div>
+
+        <div class="form__row">
+          <label class="label" for="message">Tu comentario</label>
+          <textarea
+            class="textarea"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Escribe tu experiencia..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Valoración con estrellas (radio buttons + CSS) -->
+        <div class="form__row">
+          <span class="label">Tu valoración</span>
+
+          <!--
+            Truco típico:
+            - Inputs radio (1-5)
+            - Labels con estrellas (★)
+            - CSS se encarga del efecto hover/selección
+          -->
+          <div class="star-input" aria-label="Selecciona una valoración de 1 a 5">
+            <input type="radio" id="star5" name="rating" value="5" required />
+            <label for="star5" title="5 estrellas">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 estrellas">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 estrellas">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 estrellas">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 estrella">★</label>
+          </div>
+
+          <small class="hint">
+            Consejo: si luego quieres “agregar” comentarios a la lista, necesitarás JavaScript o un backend.
+          </small>
+        </div>
+
+        <button class="btn" type="submit">Enviar comentario</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Detalle básico (HTML + CSS). Reemplaza imágenes y textos según tu necesidad.</small>
+    </div>
+  </footer>
+</body>
+</html>

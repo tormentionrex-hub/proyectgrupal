@@ -1,11 +1,17 @@
 // Función para agregar comentarios dinámicamente
-function agregarComentario() {
+
+
+function agregarComentario() {  // Funciona
     const usuarioInput = document.getElementById('usuarioComentario');
     const comentarioInput = document.getElementById('nuevoComentario');
     const usuario = usuarioInput.value.trim();
     const comentario = comentarioInput.value.trim();
 
-    if(usuario !== '' && comentario !== '') {
+    if(usuario === '' && comentario === '') { // 
+
+        alert('Por favor ingresa tu nombre y un comentario.');
+
+    } else {
         const lista = document.getElementById('listaComentarios');
 
         const li = document.createElement('li');
@@ -20,7 +26,9 @@ function agregarComentario() {
         // Limpiar inputs
         usuarioInput.value = '';
         comentarioInput.value = '';
-    } else {
-        alert('Por favor ingresa tu nombre y comentario.');
     }
+
 }
+
+
+

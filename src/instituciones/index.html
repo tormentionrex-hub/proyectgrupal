@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instituciones - Listado</title>
+
+  <!-- CSS de esta página -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Header simple -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Instituciones educativas</h1>
+      <p class="subtitle">
+        Ejemplo básico para listar instituciones y ver valoraciones con estrellas.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Grid de cards -->
+    <section class="grid" aria-label="Listado de instituciones">
+      
+      <!--
+        CARD REUTILIZABLE:
+        - Para reusar: copia este <a class="card"> y cambia:
+          - href (a dónde navegar)
+          - src (imagen)
+          - nombre, descripción, estrellas
+      -->
+      <a class="card" href="detalle.html" aria-label="Ver detalle de Instituto Central">
+        <img
+          class="card__img"
+          src="https://via.placeholder.com/800x500?text=Instituto+Central"
+          alt="Foto del Instituto Central"
+          loading="lazy"
+        />
+
+        <div class="card__body">
+          <div class="card__top">
+            <h2 class="card__title">Instituto Central</h2>
+
+            <!-- Estrellas (solo visual). Marca con .is-filled las que correspondan -->
+            <div class="stars" aria-label="Valoración: 4 de 5">
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star">★</span>
+              <span class="stars__text">4.0</span>
+            </div>
+          </div>
+
+          <p class="card__desc">
+            Enfoque práctico, profesores con experiencia y actividades extracurriculares.
+          </p>
+
+          <div class="card__meta">
+            <span>San José</span>
+            <span class="dot">•</span>
+            <span>128 reseñas</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Otra card -->
+      <a class="card" href="detalle.html" aria-label="Ver detalle de Colegio Los Pinos">
+        <img
+          class="card__img"
+          src="https://via.placeholder.com/800x500?text=Colegio+Los+Pinos"
+          alt="Foto del Colegio Los Pinos"
+          loading="lazy"
+        />
+
+        <div class="card__body">
+          <div class="card__top">
+            <h2 class="card__title">Colegio Los Pinos</h2>
+
+            <div class="stars" aria-label="Valoración: 3 de 5">
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="stars__text">3.0</span>
+            </div>
+          </div>
+
+          <p class="card__desc">
+            Buen ambiente, infraestructura correcta y atención administrativa mejorable.
+          </p>
+
+          <div class="card__meta">
+            <span>Heredia</span>
+            <span class="dot">•</span>
+            <span>56 reseñas</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Otra card -->
+      <a class="card" href="detalle.html" aria-label="Ver detalle de Academia Norte">
+        <img
+          class="card__img"
+          src="https://via.placeholder.com/800x500?text=Academia+Norte"
+          alt="Foto de la Academia Norte"
+          loading="lazy"
+        />
+
+        <div class="card__body">
+          <div class="card__top">
+            <h2 class="card__title">Academia Norte</h2>
+
+            <div class="stars" aria-label="Valoración: 5 de 5">
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="star is-filled">★</span>
+              <span class="stars__text">5.0</span>
+            </div>
+          </div>
+
+          <p class="card__desc">
+            Excelente seguimiento, recursos modernos y comunicación clara con estudiantes.
+          </p>
+
+          <div class="card__meta">
+            <span>Alajuela</span>
+            <span class="dot">•</span>
+            <span>210 reseñas</span>
+          </div>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Ejemplo educativo (HTML + CSS). Sin login y sin base de datos.</small>
+    </div>
+  </footer>
+</body>
+</html>
